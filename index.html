@@ -30,15 +30,37 @@
             background: linear-gradient(135deg, #e87a90 0%, #d1546f 100%);
             color: #fff;
             padding: 28px 20px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
         }
 
-        .header h1 {
+        .header-avatar {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #fff;
+            flex-shrink: 0;
+        }
+
+        .header-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-text{
+            text-align: left;
+        }
+
+        .header-text h1 {
             font-size: 28px;
             margin-bottom: 8px;
         }
 
-        .header p {
+        .header-text p {
             font-size: 16px;
             opacity: 0.95;
         }
@@ -138,11 +160,18 @@
         }
 
         @media (max-width: 480px) {
+            .header{
+                flex-direction: column;
+                text-align:center;
+            }
+            .header-text{
+                text-align:center;
+            }
             .content {
                 padding: 18px 16px;
             }
 
-            .header h1 {
+            .header-text h1 {
                 font-size: 24px;
             }
 
@@ -159,8 +188,13 @@
 <body>
     <div class="card">
         <div class="header">
-            <h1>韩阿姨</h1>
-            <p>高级月嫂｜育婴师｜养老护理员</p>
+            <div class="header-avatar">
+                <img src="avatar.jpg" alt="韩阿姨照片">
+            </div>
+            <div class="header-text">
+                <h1>韩阿姨</h1>
+                <p>高级月嫂｜育婴师｜养老护理员</p>
+            </div>
         </div>
 
         <div class="content">
@@ -208,7 +242,7 @@
 
             <div class="section">
                 <h2>自我介绍</h2>
-                <p>本人性格开朗和善、有爱心、责任心，热爱母婴行业、喜欢宝宝。工作认真负责，积极主动，能吃苦耐劳，尽职尽责，做事井井有条。与人相处有分寸，为人正能量，严守客户隐私，不八卦。</p>
+                <p>本人性格开朗和善、有爱心、责任心，热爱母婴行业、喜欢宝宝。工作认真负责，积极主动，能吃苦耐劳，做事井井有条。与人相处有分寸，为人正能量，严守客户隐私，不八卦。</p>
             </div>
 
             <div class="section">
@@ -230,18 +264,34 @@
             </div>
 
             <div class="section">
-                <h2>护理照片展示</h2>
+                <h2>宝宝护理照片</h2>
                 <div class="gallery">
                     <img src="baby1.jpg" alt="宝宝护理照片">
+                    <img src="baby2.jpg" alt="宝宝护理照片">
+                    <img src="baby3.jpg" alt="宝宝护理照片">
+                    <img src="baby4.jpg" alt="宝宝护理照片">
+                    <img src="baby5.jpg" alt="宝宝护理照片">
+                    <img src="baby6.jpg" alt="宝宝护理照片">
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>月子餐展示</h2>
+                <div class="gallery">
                     <img src="food1.jpg" alt="月子餐">
-                    <img src="food2.jpg" alt="营养餐">
-                    <img src="food3.jpg" alt="家常餐食">
-                    <img src="food4.jpg" alt="月子餐搭配">
-                    <img src="food5.jpg" alt="汤品辅食">
-                    <img src="shop1.jpg" alt="生活日常">
-                    <img src="photo1.jpg" alt="个人照片1">
-                    <img src="photo2.jpg" alt="个人照片2">
-                    <img src="resume12.jpg" alt="简历参考">
+                    <img src="food2.jpg" alt="月子餐">
+		    <img src="food7.jpg" alt="月子餐">
+                    <img src="food8.jpg" alt="月子餐">
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>宝宝辅食展示</h2>
+                <div class="gallery">
+                    <img src="food3.jpg" alt="宝宝辅食">
+                    <img src="food4.jpg" alt="宝宝辅食">
+                    <img src="food5.jpg" alt="宝宝辅食">
+                    <img src="food6.jpg" alt="宝宝辅食">
                 </div>
             </div>
         </div>
